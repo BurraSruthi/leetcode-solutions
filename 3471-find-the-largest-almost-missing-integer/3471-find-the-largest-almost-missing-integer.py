@@ -1,9 +1,6 @@
 class Solution:
     def largestInteger(self, nums: List[int], k: int) -> int:
         n = len(nums)
-        if k == n:
-            return max(nums)
-            
         freq = {}
 
         for i in range(n - k + 1):
